@@ -1,13 +1,13 @@
 package api.config;
 
-import services.UserService;
+import services.WorkspacesService;
 
 public enum EntityConfiguration {
 
-    USER {
+    WORKSPACES {
         @Override
         public Class<?> getEntityService() {
-            return UserService.class;
+            return WorkspacesService.class;
         }
     };
 

@@ -11,6 +11,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.commons.lang.StringUtils;
 import org.testng.Assert;
+import services.BaseService;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -36,5 +37,12 @@ public class CommonSteps extends PageSteps {
             parameters = Splitter.on(",").withKeyValueSeparator(":").split(jsonReplacementValues);
         }
         return parameters;
+    }
+
+
+    @Given("^Mi cuenta creada en clockify y mi apikey '(.*)' generada$")
+    public void tokenApi(String token) {
+        BaseService.X_API_KEY.set(token);
+
     }
 }

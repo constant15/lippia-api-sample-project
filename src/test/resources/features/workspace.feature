@@ -1,10 +1,10 @@
 Feature: Obtener todos los workspaces
 
-
+@Success
   Scenario Outline: Obtener todos los workspaces con una consulta
     Given Mi cuenta creada en clockify y mi apikey '<token>' generada
-    When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
-    Then status code <statusCode> is obtained
+    When Hago una '<operation>' hacia el endpoint '<entity>' con el '<jsonName>' y ''
+    Then se obtuvo el status code <statusCode>
 
 
     Examples:

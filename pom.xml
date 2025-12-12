@@ -86,6 +86,12 @@
             <artifactId>extentreports-cucumber4-adapter</artifactId>
             <version>1.1.0.10</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <build>
         <filters>
